@@ -1,0 +1,120 @@
+/* GLOBAL VARIABLES */
+/* INHERITABLE */
+#result-title, .heading {
+  color: #FE5F55;
+  font-size: 30pt;
+}
+
+#workout-calcs, #results, #home, #calc-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CORE */
+body {
+  background-color: #4F6367;
+  font-family: "Century Gothic", sans-serif;
+  color: #FFF;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2%;
+  font-size: 15pt;
+}
+
+/* CLASSES */
+.App {
+  overflow: hidden;
+}
+
+.week-res-txt {
+  font-weight: bold;
+}
+
+.workout-week p {
+  display: inline;
+  margin-left: 2%;
+  font-size: 15pt;
+}
+
+/* IDs */
+#back-home {
+  margin-top: 5%;
+}
+
+#barbell {
+  width: 300px;
+  margin-top: 2%;
+}
+
+#calc-body {
+  flex-direction: column;
+  height: 98vh;
+}
+
+#home {
+  font-size: 30pt;
+  text-align: center;
+  height: 98vh;
+  flex-direction: column;
+}
+
+#inner-div {
+  width: 100%;
+  text-align: center;
+}
+
+#one-rep-max {
+  width: 25%;
+  height: 50px;
+  background-color: rgba(79, 99, 103, 0.5);
+  border: 1px solid #FFF;
+  border-radius: 4px;
+  color: #FFF;
+  font-family: "Century Gothic", sans-serif;
+  text-align: center;
+  font-size: 15pt;
+}
+
+#popup-msg {
+  height: 10%;
+  color: #FE5F55;
+}
+
+#result-title {
+  text-align: center;
+}
+
+#results {
+  flex-direction: column;
+  height: 25%;
+}
+
+#start-txt {
+  height: 10%;
+  font-size: 15pt;
+}
+
+#submit-weight {
+  width: 5%;
+  height: 5%;
+  border-radius: 4px;
+  font-family: "Century Gothic", sans-serif;
+  color: white;
+  font-weight: bold;
+  border-color: #FE5F55;
+  background-color: #FE5F55;
+}
+
+#title {
+  color: #FE5F55;
+}
+
+#workout-calcs {
+  width: 100%;
+}
+
+/*# sourceMappingURL=App.css.map */

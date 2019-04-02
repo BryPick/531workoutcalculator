@@ -1,0 +1,126 @@
+/* INHERITABLE */
+%heading {
+  color: $top-heading-color;
+  font-size: 30pt;
+}
+
+%vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CORE */
+body {
+  background-color: $bg-color;
+  font-family: $font-family;
+  color: $font-color;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2%;
+  font-size: $body-txt-size;
+}
+
+/* CLASSES */
+.App {
+  overflow: hidden;
+}
+
+.heading {
+  @extend %heading;
+}
+
+.week-res-txt {
+  font-weight: bold;
+}
+
+.workout-week p {
+  display: inline;
+  margin-left: 2%;
+  font-size: $body-txt-size;
+}
+
+/* IDs */
+#back-home {
+  margin-top: 5%;
+}
+
+#barbell {
+  width: 300px;
+  margin-top: 2%;
+}
+
+#calc-body {
+  @extend %vertical-center;
+  flex-direction: column;
+  height: $page-height;
+}
+
+#home {
+  font-size: 30pt;
+  text-align: center;
+  height: $page-height;
+  @extend %vertical-center;
+  flex-direction: column;
+}
+
+#inner-div {
+  width: 100%;
+  text-align: center;
+}
+
+#one-rep-max {
+  width: 25%;
+  height: 50px;
+  background-color: rgba(79, 99, 103, .5);
+  border: 1px solid #FFF;
+  border-radius: 4px;
+  color: $font-color;
+  font-family: $font-family;
+  text-align: center;
+  font-size: 15pt;
+}
+
+#popup-msg {
+  height: 10%;
+  color: #FE5F55;
+}
+
+#result-title {
+  @extend %heading;
+  text-align: center;
+}
+
+#results {
+  @extend %vertical-center;
+  flex-direction: column;
+  height: 25%;
+}
+
+#start-txt {
+  height: 10%;
+  font-size: $body-txt-size;
+}
+
+#submit-weight {
+  width: 5%;
+  height: 5%;
+  border-radius: 4px;
+  font-family: $font-family;
+  color: white;
+  font-weight: bold;
+  border-color: $top-heading-color;
+  background-color: $top-heading-color;
+}
+
+#title {
+  color: $top-heading-color;
+}
+
+#workout-calcs {
+  width: 100%;
+  @extend %vertical-center;
+}
