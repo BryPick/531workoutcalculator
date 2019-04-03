@@ -20,7 +20,7 @@ class EnterWeightValues extends Component {
     validateWeight = (weight) => {
         if(weight && !isNaN(weight)) {
             if(weight > 0) {
-                console.log(weight);
+                this.props.calculate(weight);
             }else {
                 this.setState({popupMsg: "Weight needs to be greater than 0"});
                 this.setState({popupMsgShown: true});

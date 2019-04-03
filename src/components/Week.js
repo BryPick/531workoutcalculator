@@ -1,17 +1,6 @@
 import React, { Component } from 'react';
 
 class Week extends Component {
-    constructor() {
-        super();
-        this.state = {
-            weekNumber: '',
-            sets: 3,
-            reps: '',
-            percentages: '',
-            weights: ''
-        }
-    }
-
     render() {
         return (
             <div className="workout-week">
