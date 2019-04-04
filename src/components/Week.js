@@ -2,16 +2,23 @@ import React, { Component } from 'react';
 
 class Week extends Component {
     render() {
+        const {weekNumber, sets, reps, percentages, weights} = this.props.week;
         return (
-            <div className="workout-week">
-                <p className="week-res-txt">Week 3:</p>
-                <p>Sets: 3</p>
-                <p>Reps: 5, 3, 1</p>
-                <p>Percentages: 75%, 85%, 95%</p>
-                <p>Weights: 100, 200, 300</p>
-            </div>
+            <tr>
+                <td className="week-res-txt">Week {weekNumber}</td>
+                <td>{sets}</td>
+                <td>{reps.map((rep) => {
+                    return rep+", ";
+                })}</td>
+                <td>{percentages.map((percentage) => {
+                    return (percentage*100)+"%, ";
+                })}</td>
+                <td>{weights.map((weight) => {
+                    return weight+", ";
+                })}</td>
+            </tr>
         );
-    }
-}
+    }//end render
+}//end Week.class
 
 export default Week;

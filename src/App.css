@@ -5,7 +5,7 @@
   font-size: 30pt;
 }
 
-#workout-calcs, #results, #home, #calc-body {
+#results, #home, #calc-body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,15 @@ body {
   background-color: #4F6367;
   font-family: "Century Gothic", sans-serif;
   color: #FFF;
+}
+
+table {
+  width: 100%;
+  margin: auto;
+}
+
+thead, td {
+  text-align: left;
 }
 
 footer {
@@ -90,7 +99,7 @@ footer {
 
 #results {
   flex-direction: column;
-  height: 25%;
+  width: 75%;
 }
 
 #start-txt {
@@ -113,8 +122,12 @@ footer {
   color: #FE5F55;
 }
 
-#workout-calcs {
+#workout-calculations {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=App.css.map */

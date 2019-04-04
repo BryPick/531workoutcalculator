@@ -11,12 +11,17 @@ class EnterWeightValues extends Component {
         }
     }
 
+    /* Takes weight from input field, calls validateWeight
+    * */
     enterWeight = (event) => {
         event.preventDefault();
         const weight = this.weightInput.current.value;
         this.validateWeight(weight);
-    };
+    };//end enterWeight
 
+    /* Validates the user preferred weight
+     * @return calls the calculate function if the weight value validates
+     * */
     validateWeight = (weight) => {
         if(weight && !isNaN(weight)) {
             if(weight > 0) {
@@ -29,7 +34,7 @@ class EnterWeightValues extends Component {
             this.setState({popupMsg: "Please enter a number!"});
             this.setState({popupMsgShown: true});
         }
-    };
+    };//end validateWeight
 
     render() {
         return (
@@ -42,7 +47,7 @@ class EnterWeightValues extends Component {
                 <button id="submit-weight" onClick={this.enterWeight}>Submit</button>
             </React.Fragment>
         );
-    }
-}
+    }//end render
+}//end EnterWeightValues.class
 
 export default EnterWeightValues;

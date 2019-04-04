@@ -16,15 +16,17 @@ class App extends Component {
         };
     }
 
-    changeShown() {
+    /* Function to show the 'Start' message*/
+    changeShown = ()  => {
         this.setState(this.displayStart);
-    }
+    };//end changeShown
 
-    displayStart(state) {
+    /* Function to change state of the 'Start' message*/
+    displayStart = (state) => {
         return {
             shown: !state.shown
         };
-    }
+    };//end displayStart
 
     render() {
         return (
@@ -51,7 +53,7 @@ class App extends Component {
                 <Route path="/results" component={Results}/>
             </Router>
         );
-    }
-}
+    }//end render
+}//end App.class
 
 export default App;

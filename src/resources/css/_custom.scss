@@ -17,6 +17,15 @@ body {
   color: $font-color;
 }
 
+table {
+  width: 100%;
+  margin: auto;
+}
+
+thead, td {
+  text-align: left;
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -97,7 +106,7 @@ footer {
 #results {
   @extend %vertical-center;
   flex-direction: column;
-  height: 25%;
+  width: 75%;
 }
 
 #start-txt {
@@ -120,7 +129,10 @@ footer {
   color: $top-heading-color;
 }
 
-#workout-calcs {
+#workout-calculations {
   width: 100%;
-  @extend %vertical-center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
