@@ -7,7 +7,6 @@ import {Link} from "react-router-dom";
 class Calculate extends Component {
     constructor() {
         super();
-        this.oldWeeks = {};
         this.state = {
             oneRepMax: 0,
             showResults: false,
@@ -55,9 +54,9 @@ class Calculate extends Component {
         this.state.weeks.map((week) => {
             // Create new array
             let newArray = [];
-            newArray.push(weight * week.percentages[0]);
-            newArray.push(weight * week.percentages[1]);
-            newArray.push(weight * week.percentages[2]);
+            newArray.push(parseFloat(weight * week.percentages[0]).toFixed(2));
+            newArray.push(parseFloat(weight * week.percentages[1]).toFixed(2));
+            newArray.push(parseFloat(weight * week.percentages[2]).toFixed(2));
 
             // Push new array for each week
             newWeeks[k].weights = update(week.weights, {$push: newArray});

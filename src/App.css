@@ -16,15 +16,16 @@ body {
   background-color: #4F6367;
   font-family: "Century Gothic", sans-serif;
   color: #FFF;
+  overflow: hidden;
 }
 
 table {
   width: 100%;
-  margin: auto;
+  text-align: center;
 }
 
-thead, td {
-  text-align: left;
+td {
+  width: 20%;
 }
 
 footer {
@@ -51,7 +52,7 @@ footer {
 
 /* IDs */
 #back-home {
-  margin-top: 5%;
+  margin-top: 150px;
 }
 
 #barbell {
@@ -71,13 +72,8 @@ footer {
   flex-direction: column;
 }
 
-#inner-div {
-  width: 100%;
-  text-align: center;
-}
-
 #one-rep-max {
-  width: 25%;
+  width: 475px;
   height: 50px;
   background-color: rgba(79, 99, 103, 0.5);
   border: 1px solid #FFF;
@@ -108,7 +104,7 @@ footer {
 }
 
 #submit-weight {
-  width: 5%;
+  width: 95px;
   height: 5%;
   border-radius: 4px;
   font-family: "Century Gothic", sans-serif;
@@ -122,12 +118,23 @@ footer {
   color: #FE5F55;
 }
 
-#workout-calculations {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+/* ANIMATIONS */
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
 
 /*# sourceMappingURL=App.css.map */
