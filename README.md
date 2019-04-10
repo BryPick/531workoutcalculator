@@ -14,7 +14,7 @@ are done because of *my* personal 5, 3, 1 workout routine.
 ![531 App](https://i.imgur.com/hWV2jkH.png)  
 
 User will enter weight value in the text field and results will appear  
-right the text field.
+right below the text field.
 
 ### Build Environment
 -  [x] React 16.8.6 +
